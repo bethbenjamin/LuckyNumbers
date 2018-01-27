@@ -28,42 +28,37 @@ namespace LuckyNumbers
 
 
             //ask user to guess 6 lucky numbers in an array data structure and must use a loop to populate the array
-            int j;
+            int g; //g = //guess (in my mind) to reference it.
             int[] array = new int[6]; // 6 size array
-
-            // Accepting value from user 
-            for (j = 0; j < 6; j++)
+            Console.WriteLine("Please enter 6 Lucky Numbers.");
+            // Accepting input value from user 
+            for (g = 0; g < 6; g++) 
             {
                 Console.Write("Enter your lucky number:");
-                //Storing value in an array
-                array[j] = Convert.ToInt32(Console.ReadLine());
+               
+                array[g] = Convert.ToInt32(Console.ReadLine()); //storing value in the array
             }
-            Console.WriteLine("\n\n"); //carrage return to display their value
-            //we are goign to be printing the value on console
-            for (j = 0; j < 6; j++)
+            Console.WriteLine("\n"); //carrage return to display their value // found this on microsoft community forum /i think we discussed it in class though.
+            //we are going to be printing the value on console
+            for (g = 0; g < 6; g++)
             {
-                Console.WriteLine("Lucky Number: {0}", array[j]); //telling user their lucky number output
+                Console.WriteLine("You selected : {0}", array[g]); //telling user their lucky number output
             }
             Console.ReadLine();
-
-
-
+            
             //random number generator
             Random r = new Random();
             int[] rArray = new int[6];
             for (int i = 0; i < rArray.Length; i++)
             {
                 rArray[i] = r.Next(lowNumber, highNumber); //array will display a random array based on user input of lowest # and hightest #
-                Console.WriteLine(rArray[i]); //display numbers 
+                Console.WriteLine("Lucky Number: " +rArray[i]); //display numbers per line with the word "Lucky Number : x <br>
             }
 
-
+            // create an if else statement to compare the input numbers and the random numbers
+            // if guess numbers match, add x amount to each matching number
             
-            int[] userInputArray = new int[6]; //new array for a user input of 6 elements
-            for (int i=0; i == rArray[i]; i++) // if int is equal to random array of higher and lower numbers
-            {
-               // rArray[i] = 
-            }
+            
 
             
         }
