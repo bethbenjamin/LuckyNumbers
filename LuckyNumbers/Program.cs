@@ -89,10 +89,19 @@ namespace LuckyNumbers
 
            
 
-                Console.WriteLine("Try again? Type exit to quit");
-                
-        }
+              
+                int matchesAmount = (matches*100000);
+            Console.WriteLine("You won $" +matchesAmount);
 
+
+
+
+            Console.WriteLine("Try again? Type exit to quit");
+
+
+
+        }
+           
 
 
 
