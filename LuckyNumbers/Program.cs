@@ -69,7 +69,7 @@ namespace LuckyNumbers
                     if (rArray.Contains(luckyGuess[k])) //if random array contains value of element at index of k add one
                     {
                         matches += 1; //if rarray finds a match it increments one to matches
-                        Console.WriteLine("You guessed " + matches + "number(s) correctly!");
+                        Console.WriteLine("You guessed " + matches + " number(s) correctly!");
                     }
 
                 }
